@@ -1,0 +1,124 @@
+:root {
+  --Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --Soft-Pink: hsl(333, 80%, 67%);
+  --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+}
+body {
+  margin: 80px 20px;
+  font: normal normal 400 15px League Spartan;
+  background-image: url(images/bg-pattern-top-mobile.svg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  overflow: auto;
+}
+/*body bottom bg*/
+.bg-bottom {
+  position: fixed;
+  bottom: 0;
+  height: 50%;
+  right: 0;
+  width: 100%;
+  background-image: url(images/bg-pattern-bottom-mobile.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+main,
+.rated-contain div,
+.feadbacks-aria div,
+.profile div {
+  display: flex;
+  flex-direction: column;
+}
+main,
+.rated-contain div {
+  align-items: center;
+  gap: 15px;
+}
+main {
+  margin-bottom: 35px;
+}
+.rated-contain,
+.feadbacks-aria {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: stretch;
+  gap: 20px;
+  margin-top: 15px;
+}
+h1,
+span {
+  color: var(--Very-Dark-Magenta);
+  font-weight: 700;
+}
+
+h1,
+article {
+  text-align: center;
+  margin: 11px 25px;
+}
+h1 {
+  font-size: 38px;
+  line-height: 32px;
+  margin-bottom: 8px;
+}
+article {
+  color: var(--Dark-Grayish-Magenta);
+  line-height: 20px;
+}
+.rated-contain div {
+  gap: 5px;
+  background-color: var(--Light-Grayish-Magenta);
+  padding: 10px 50px 10px 50px;
+  border-radius: 5px;
+}
+div.stars {
+  background-image: url(images/icon-star.svg), url(images/icon-star.svg),
+    url(images/icon-star.svg), url(images/icon-star.svg),
+    url(images/icon-star.svg);
+  width: 108px;
+  height: 30px;
+  background-position: left, 22px, 44px, 66px, 88px;
+  background-repeat: no-repeat;
+  padding: 0px;
+  margin: 0px;
+}
+.feadbacks-aria div {
+  background-color: var(--Very-Dark-Magenta);
+  gap: 24px;
+  padding: 28px;
+  margin: 0px 13px;
+  border-radius: 10px;
+}
+div .profile {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  align-items: center;
+  gap: 20px;
+  padding: 0px;
+  margin: 0px;
+}
+.profile div {
+  gap: 5px;
+  padding: 0px;
+  margin: 0px;
+}
+img {
+  width: 100%;
+  border-radius: 50%;
+}
+.profile p {
+  margin: 2px;
+  color: white;
+  font-weight: 500;
+}
+p.buyer {
+  color: var(--Soft-Pink);
+  font-weight: 400;
+}
+q {
+  color: white;
+  line-height: 25px;
+}

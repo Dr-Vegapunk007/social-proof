@@ -1,0 +1,67 @@
+@media all and (min-width: 791px) {
+  body {
+    background-image: url(images/bg-pattern-top-desktop.svg);
+    margin: 80px 144px;
+  }
+  main {
+    gap: 30px;
+    align-items: flex-end;
+    margin-bottom: 50px;
+    justify-content: space-between;
+  }
+  main,
+  .rated-contain div {
+    flex-direction: row;
+  }
+  .rated-contain {
+    margin-top: 0px;
+    width: 100%;
+    justify-items: start;
+  }
+  div.best-tech {
+    justify-self: end;
+  }
+  main div {
+    max-width: 450px;
+  }
+
+  h1 {
+    font-size: 51px;
+    margin-top: 40px;
+  }
+  article {
+    font-size: 17px;
+    margin-top: 30px;
+  }
+  h1,
+  article {
+    text-align: left;
+    line-height: initial;
+  }
+  .rated-contain div {
+    padding-left: 20px;
+  }
+  .report {
+    justify-self: center;
+  }
+  span {
+    white-space: nowrap;
+  }
+  .feadbacks-aria {
+    grid-template-columns: repeat(3, 1fr);
+    height: 260px;
+    align-items: start;
+  }
+  .feadbacks-aria div {
+    margin: 0;
+  }
+  .irene {
+    align-self: center;
+  }
+  .anne {
+    align-self: end;
+  }
+  .bg-bottom {
+    height: 100%;
+  }
+}
